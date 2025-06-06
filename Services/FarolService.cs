@@ -12,7 +12,7 @@ namespace ViaCepConsumerApp.Services
         private readonly List<Farol> _farois;
         private readonly ViaCepService _viaCepService; // Dependência do ViaCepService
 
-        public FarolService(ViaCepService viaCepService) // Construtor para injeção de dependência
+        public FarolService(ViaCepService viaCepService)
         {
             _farois = new List<Farol>();
             _viaCepService = viaCepService ?? throw new ArgumentNullException(nameof(viaCepService));
@@ -59,9 +59,9 @@ namespace ViaCepConsumerApp.Services
         {
             if (!_farois.Any())
             {
-                // Não imprime nada aqui, deixa a UI lidar com lista vazia se quiser
+                
             }
-            return _farois; // Retorna a lista, mesmo que vazia
+            return _farois; 
         }
 
         public bool RemoverFarol(string nomeOuId)

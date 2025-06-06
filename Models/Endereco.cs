@@ -6,7 +6,7 @@ namespace ViaCepConsumerApp.Models
     public class Endereco
     {
         [JsonPropertyName("cep")]
-        public string? Cep { get; set; } // Usar string? para indicar que pode ser nulo
+        public string? Cep { get; set; } 
 
         [JsonPropertyName("logradouro")]
         public string? Logradouro { get; set; }

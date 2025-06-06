@@ -48,12 +48,12 @@ namespace ViaCepConsumerApp.Services
             catch (HttpRequestException e)
             {
                 Console.WriteLine($"Erro na requisição HTTP para o CEP {cepFormatado}: {e.Message}");
-                return new Endereco { Cep = cepFormatado, Erro = true }; // Indica erro na consulta
+                return new Endereco { Cep = cepFormatado, Erro = true }; // Indica erro 
             }
             catch (Exception e) // Captura outras exceções (ex: JsonException)
             {
                 Console.WriteLine($"Erro ao processar dados do ViaCEP para {cepFormatado}: {e.Message}");
-                return new Endereco { Cep = cepFormatado, Erro = true }; // Indica erro na consulta
+                return new Endereco { Cep = cepFormatado, Erro = true }; // Indica erro
             }
         }
     }

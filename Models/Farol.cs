@@ -2,8 +2,6 @@
 using System;
 using System.ComponentModel;
 
-// Certifique-se que Endereco.cs está no mesmo namespace ou que há um 'using' se estiver diferente.
-// Como ambos estarão em ViaCepConsumerApp.Models, não precisa de 'using' extra aqui para Endereco.
 
 namespace ViaCepConsumerApp.Models
 {
@@ -31,10 +29,10 @@ namespace ViaCepConsumerApp.Models
         public Farol(string nome, StatusFarol status, int nivelEnergia, string cep)
         {
             Id = Guid.NewGuid();
-            Nome = nome; // Assumindo que nome não será nulo pela lógica de UI
+            Nome = nome; // Assumindo que nome não será nulo pela lógica
             Status = status;
             NivelEnergia = nivelEnergia;
-            Cep = cep; // Assumindo que cep não será nulo pela lógica de UI
+            Cep = cep; // Assumindo que cep não será nulo pela lógica
         }
 
         public override string ToString()
@@ -64,7 +62,7 @@ namespace ViaCepConsumerApp.Models
         public static string GetEnumDescription(StatusFarol value)
         {
             var fieldInfo = value.GetType().GetField(value.ToString());
-            if (fieldInfo == null) return value.ToString(); // Salvaguarda
+            if (fieldInfo == null) return value.ToString();
             var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
             return attributes.Length > 0 ? attributes[0].Description : value.ToString();
         }
