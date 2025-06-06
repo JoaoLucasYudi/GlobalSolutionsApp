@@ -3,6 +3,17 @@
 
 ## ReadMe Global Solutions - C-SHARP SOFTWARE DEVELOPMENT e ARQUITETURA ORIENTADA A SERVIÇOS (SOA) E WEB SERVICE
 ---
+### Integrantes
+
+- RODRIGO RESENDE VIANA RM: 551057
+- CAIQUE CHAGAS NITTA RM:551943
+- JOÃO LUCAS YUDI REDI HANDA RM:98458
+
+### Vídeo explicativo
+
+https://www.youtube.com/watch?v=7S_w9O3nE-o
+
+---
 ### ❗Problemática que queremos resolver
 
 Eventos climáticos extremos como chuvas intensas, vendavais e tempestades têm causado frequentes quedas de energia elétrica em áreas urbanas, comprometendo serviços públicos essenciais — entre eles, os **semáforos**. Com a interrupção do funcionamento desses equipamentos, observam-se:
